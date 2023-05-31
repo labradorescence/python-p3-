@@ -121,3 +121,16 @@ build out any helper methods if needed.
   - Returns the total number of times that park has been visited
 - `NationalPark best_visitor()`
   - Returns the Visitor who has visited the park the most
+
+
+
+v1 = Visitor("Jenny")
+v2 = Visitor("Johnny")
+
+np1 = NationalPark("Esopus Nature Preserve")
+np2 = NationalPark("Central Park")
+
+t1 = Trip(v1, np1, "5/30", "5/31")
+t2 = Trip(v1, np2, "5/30", "5/31")
+t3 = Trip(v2, np1, "5/28", "5/28")
+t4 = Trip(v2, np2, "5/22", "5/23")

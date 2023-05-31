@@ -78,6 +78,7 @@ class TestNationalParks:
         assert (len(set(p1.visitors())) == len(p1.visitors()))
         assert (len(p1.visitors()) == 2)
 
+
     def test_total_visits(self):
         '''Correct total visits'''
         p1 = NationalPark("Yosemmette")
