@@ -44,3 +44,14 @@ class Trip:
             raise Exception("Must be of type `NationalPark`")
 
 
+    @property
+    def start_date(self):
+        return self._start_date
+    
+    @start_date.setter
+    def start_date(self, start_date):
+        if isinstance(start_date, str):
+            self._start_date = start_date
+
+        else:
+            raise Exception("start date must be a string")
