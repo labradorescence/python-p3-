@@ -9,6 +9,8 @@ For our purposes, a `NationalPark` has many `Trip`s, a `Visitor` has many
 
 `NationalPark` - `Visitor` is a many to many relationship.
 
+NationalPark -< Trip >- Visitor 
+
 **Note**: You should draw your domain on paper or on a whiteboard _before you
 start coding_. Remember to identify a single source of truth for your data.
 
@@ -90,6 +92,8 @@ build out any helper methods if needed.
   - Returns the visitor object for that trip
   - Must be of type `Visitor`
   - `raise Exception` if setter fails
+
+
 - `Trip property national_park`
   - Returns the NationalPark object for that trip
   - Must be of type `NationalPark`
@@ -100,6 +104,7 @@ build out any helper methods if needed.
 - `Visitor trips()`
   - Returns a list of all trips for that visitor
   - The list of trips must contain type `Trip`
+
 - `Visitor national_parks()`
   - Returns a **unique** list of all parks who that visitor has visited.
   - The list of national parks must contain type `NationalPark` 
@@ -109,6 +114,8 @@ build out any helper methods if needed.
 - `NationalPark trips()`
   - Returns a list of all trips planned for this national park
   - The list of trips must contain type `trip`
+
+  
 - `NationalPark visitors()`
   - Returns a **unique** list of all visitors a national park has recieved
   - The list of visitors must contain type `Visitor`
@@ -121,3 +128,14 @@ build out any helper methods if needed.
   - Returns the total number of times that park has been visited
 - `NationalPark best_visitor()`
   - Returns the Visitor who has visited the park the most
+
+
+v1 = Visitor("Jenny")
+v2 = Visitor("Johnny")
+np1 = NationalPark("park1")
+np2 = NationalPark("park2")
+t1 = Trip(v1, np1, "5/31", "5/31")
+t2 = Trip(v1, np2, "5/31", "5/31")
+t3 = Trip(v2, np1, "5/31", "5/31")
+t4 = Trip(v2, np2, "5/31", "5/31")
+t1.start_date

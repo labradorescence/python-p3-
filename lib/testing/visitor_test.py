@@ -74,6 +74,7 @@ class TestVisitor:
         assert (len(set(vis.national_parks())) == len(vis.national_parks()))
         assert (len(vis.national_parks()) == 2)
 
+
     def test_customers_of_type_customer(self):
         '''Visitor nationalparks are of type NationalPark'''
         p1 = NationalPark("Yosemmette")
