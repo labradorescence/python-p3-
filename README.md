@@ -83,6 +83,7 @@ build out any helper methods if needed.
 
 - `Trip __init__(self, visitor, national_park, start_date, end_date)`
   - Trip is initialized with a `Visitor` instance, a `NationalPark` instance, a start_date, and an end_date
+  
 - `Trip property start_date`
   - Returns the trip's start_date
   - Start_date must be of type `str`
